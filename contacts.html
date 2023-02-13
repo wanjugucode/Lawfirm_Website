@@ -11,6 +11,10 @@
     <title>Bryants Law</title>
     <link rel="icon" href="bryImage/2 2.png" sizes="96x96" type="image/png">
         <style>
+          .row1{
+    
+            padding-bottom: 0%;
+          }
         .col {
   float: left;
   width: 50%;
@@ -23,13 +27,53 @@
   clear: both;
 }
 
+h2{
+  visibility: hidden;
+}
   .body{
     font-family: sans-serif;
   }
+  @media only screen and (min-width: 230px) and (max-width: 840px) {
+    .row1{
+    
+    padding-bottom: 8%;
+  }
+  .row .col.col.contact-form{
+  
+    height: auto;
+ 
+
+    
+
+  }
+  .row .col.col.contact-form h1{
+    visibility: hidden;
+  }
+  .row .col.col.contact-form h2{
+visibility: visible;
+color: #050A30;
+  }
+
+
+
+form{
+  display: block;
+    margin: 0 auto;
+}
+
+
+    
+  }
       @media only screen and (min-width: 375px) and (max-width: 1290px){
+        
+        
+
+
 
     .row .col.contact{
    height: 80%;
+   width: 90%;
+
    
 
     }
@@ -50,6 +94,7 @@ margin-left: 30%;
   .row .col.contact-form h1{
     margin-left: 35%;
     font-size:150%;
+    
   }
   .row .col.contact-form{
     margin-left: 7%;
@@ -269,7 +314,24 @@ box-shadow: 0 1px 15px rgba(4, 242, 250, 0.438), 0 1px 28px rgba(5, 219, 247, 0.
      
         <div class="col contact-form">
         <h1 style=" margin-top: 4%;">Query Form</h1>
-        <form class="gform pure-form pure-form-stacked" method="POST" data-email="info@bryantslaw.org"
+        <h2>Query Form</h2>
+        <script type="text/javascript">
+      
+      
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbyCjySa_Q3bGiO6315wbF5ma1-w1RLW0-nDP8kmvwVD5Gh0md_up8Obfkud0KZ4Gmsd-g/exec';
+                  const form = document.forms['google-sheet']
+                
+                  form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                      .then(response => alert("You have successfully submitted."))
+                      .catch(error => console.error('Error!', error.message))
+                  })
+        </script>
+
+
+
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="info@bryantslaw.com"
         action="https://script.google.com/macros/s/AKfycbyCjySa_Q3bGiO6315wbF5ma1-w1RLW0-nDP8kmvwVD5Gh0md_up8Obfkud0KZ4Gmsd-g/exec" style="margin-top: -2%;">
         <div class="form-elements"><br>
        
