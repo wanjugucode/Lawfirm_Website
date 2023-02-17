@@ -3,229 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=960px">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="servicex.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"   rel="stylesheet">
- 
-  <link rel="stylesheet" href="servicex.css">
-    <title>Contact us</title>
-</head>
-<body>
 
-  <div class="row1">
-    <button class="btn-back" onclick="location.href='index.html'; ">
-        <i class="material-icons md-36"> <a href="index.html">home</a> </i>
-    </button>
-    <div class="column1">
-        <div class="about-logo ">
-            <img src="bryImage/2 2.png" alt="">
-          </div>
-
-        <div class="icon-contact">
-            <i class="material-icons md-36">phone</i>
-            <h4>Contact Us</h4>
-      
-    </div>
-
-    </div>
-</div>
-
-
-     
-        <div class="row">
-          <div class="col contact" >
-       
-          <q class="qoute">Bryant's Law zealously advocates <br> for the client's best interests solely <br> based on the applicable law and  <br>the client's instructions.</q>
-
-
-
-   
-  </div>
-  
-  <div class="col contact-form">
- <h1 style=" margin-top: 4%;">Query Form</h1>
- <form class="gform pure-form pure-form-stacked" method="POST" data-email="karobiaanastasia@gmail.com"
- action="https://script.google.com/macros/s/AKfycbyCjySa_Q3bGiO6315wbF5ma1-w1RLW0-nDP8kmvwVD5Gh0md_up8Obfkud0KZ4Gmsd-g/exec" style="margin-top: -2%;">
- <div class="form-elements"><br>
-
- <input type="text" name="name" required="" placeholder="Enter your name..."/>
-
- <input type="number"  name="phone" required=""placeholder="Enter your phone number..."/>
-  <input type="email" name="email" required="" placeholder="Enter your email address..."/>
-  <textarea  name="message" rows="5" cols="22" required="" placeholder="Enter your message..."></textarea><br><br>
-
- <button class="submit">Send</button>
-</div>
- <div class="thankyou_message" style="display:none; color:white;
- margin:0 auto; margin-top: 10%; background:#050A30;border:8px solid rgb(199,147,48);border-radius: 40px;width: 300px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
- <h1>Thanks for contacting us!</h1>
- <h1>*******</h1>
-</div>
-
-</form>
-
-
-</div>
-
-</div>
-
-<h2 style=" margin-top: 4%; color: white; text-align: center;">Find us</h2>
-<div class="row" style="background-color: #050A30; box-shadow: 1px 2px 4px 10px  rgb(164 122 47); padding: 2px;" >
-  <div class="col contacts"  >
-
-     
-    <!-- <span >  <i class="material-icons md-33">place</i> -->
-       <div class="address" style="font-size: 18px; margin-top: 0%; ">
-        <i class="material-icons md-33">place</i> <br> Nairobi</div>
-         
-             
-       <div class="address" style="font-size: 16px; margin-top: 15%;">0720774411 - info@bryantslaw.org</div>
-
-      
-      
-        <!-- <span ><i class="material-icons md-33">place</i> -->
-        <div class="address"style="font-size: 18px; margin-top: 15%;">
-          <i class="material-icons md-33">place</i> <br>
-          Mombasa</div>
-      <!-- </span>  -->
-      
-
- 
-
-    </div>
-
- 
-
-    <div class="col map" style="margin-top: 2%; float: left; padding-left: 0.5%;"  >
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.99787819699!2d39.71706594998835!3d-4.020829997061634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb95506bfc5cf6c51!2zNMKwMDEnMTUuMCJTIDM5wrA0MycwOS4zIkU!5e0!3m2!1sen!2ske!4v1674058257756!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
-    </div>  
-  </div>
-
-
-<div class="footer" style="text-align: center; color: white; padding: 4%; font-size: 18px; vertical-align: text-bottom; width: 100%;">
-  <h6>© 2023 All rights reserved.</h6>
-</div>
-
-
-<script data-cfasync="false" type="text/javascript">
+    <title>Bryants Law</title>
+    <link rel="icon" href="bryImage/2 2.png" sizes="96x96" type="image/png">
+        <style>
+          .row1{
     
-  (function() {
- function validEmail(email) {
-   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-   return re.test(email);
- }
+            padding-bottom: 0%;
+          }
+        .col {
+  float: left;
+  width: 50%;
+}
+input{
+  width: 92%;
+  color: #050A30;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+textarea{
+  width: 92%;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: sans-serif;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
- function validateHuman(honeypot) {
-   if (honeypot) {
-     console.log("Robot Detected!");
-     return true;
-   } else {
-     console.log("Welcome Human!");
-   }
- }
- function getFormData(form) {
-   var elements = form.elements;
-
-   var fields = Object.keys(elements).filter(function(k) {
-         return (elements[k].name !== "honeypot");
-   }).map(function(k) {
-     if(elements[k].name !== undefined) {
-       return elements[k].name;
-     }else if(elements[k].length > 0){
-       return elements[k].item(0).name;
-     }
-   }).filter(function(item, pos, self) {
-     return self.indexOf(item) == pos && item;
-   });
-
-   var formData = {};
-   fields.forEach(function(name){
-     var element = elements[name];
-     formData[name] = element.value;
-     if (element.length) {
-       var data = [];
-       for (var i = 0; i < element.length; i++) {
-         var item = element.item(i);
-         if (item.checked || item.selected) {
-           data.push(item.value);
-         }
-       }
-       formData[name] = data.join(', ');
-     }
-   });
-
-   // add form-specific values into the data
-   formData.formDataNameOrder = JSON.stringify(fields);
-   formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
-   formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
-
-   console.log(formData);
-   return formData;
- }
-
- function handleFormSubmit(event) {  
-   event.preventDefault();           
-   var form = event.target;
-   var data = getFormData(form);         
-   if( data.email && !validEmail(data.email) ) {   
-     var invalidEmail = form.querySelector(".email-invalid");
-     if (invalidEmail) {
-       invalidEmail.style.display = "block";
-       return false;
-     }
-   } else {
-     disableAllButtons(form);
-     var url = form.action;
-     var xhr = new XMLHttpRequest();
-     xhr.open('POST', url);
-     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-     xhr.onreadystatechange = function() {
-         console.log(xhr.status, xhr.statusText);
-         console.log(xhr.responseText);
-         var formElements = form.querySelector(".form-elements")
-         if (formElements) {
-           formElements.style.display = "none"; // hide form
-         }
-         var thankYouMessage = form.querySelector(".thankyou_message");
-         if (thankYouMessage) {
-           thankYouMessage.style.display = "block";
-         }
-         return;
-     };
-     var encoded = Object.keys(data).map(function(k) {
-         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-     }).join('&');
-     xhr.send(encoded);
-   }
- }
- 
- function loaded() {
-   console.log("Contact form submission handler loaded successfully.");
-   var forms = document.querySelectorAll("form.gform");
-   for (var i = 0; i < forms.length; i++) {
-     forms[i].addEventListener("submit", handleFormSubmit, false);
-   }
- };
- document.addEventListener("DOMContentLoaded", loaded, false);
-
- function disableAllButtons(form) {
-   var buttons = form.querySelectorAll("button");
-   for (var i = 0; i < buttons.length; i++) {
-     buttons[i].disabled = true;
-   }
- }
-})();
-
-
- </script>
-<style>
+h2{
+  visibility: hidden;
+}
   .body{
     font-family: sans-serif;
   }
+  @media only screen and (min-width: 230px) and (max-width: 840px) {
+    .row1{
+    
+    padding-bottom: 8%;
+  }
+  .row .col.col.contact-form{
+  
+    height: auto;
+ 
+
+    
+
+  }
+  .row .col.col.contact-form h1{
+    visibility: hidden;
+  }
+  .row .col.col.contact-form h2{
+visibility: visible;
+color: #050A30;
+  }
+
+
+
+
+form{
+  display: block;
+    margin: 0 auto;
+}
+
+
+    
+  }
       @media only screen and (min-width: 375px) and (max-width: 1290px){
+        
+       
+
+
+       
+
+/* .row.col.contact-form{
+
+}
+.gform.pure-form.pure-form-stacked{
+  background-color: red;
+  width: 100%;
+
+
+}
+.gform.pure-form.pure-form-stacked .form-elements  {
+  display: block;
+  background-color: red;
+  display: block;
+  margin: 0 auto;
+  padding-left: 0%;
+} */
+input{
+  width: 85%;
+}
+textarea{
+  width: 85%;
+}
+
 
     .row .col.contact{
    height: 80%;
+   width: 90%;
+
    
 
     }
@@ -244,17 +137,25 @@ margin-left: 30%;
  
   }
   .row .col.contact-form h1{
-    margin-left: 25%;
+    margin-left: 35%;
     font-size:150%;
+    
   }
   .row .col.contact-form{
-    margin-left: 9%;
-    margin-top: 0%;
+    margin-left: 7%;
+    margin-top: auto;
     height: auto;
+    /* background-color: red; */
+
   }
+  .row .col.contact-form form{
+    margin-top: -5%;
+    
+  }
+
   .row .col.map{
     margin-left: 9%;
-    margin-top: 0%;
+    margin-top: 2%;
     height: auto;
 
   }
@@ -338,7 +239,7 @@ height: 500px;
         display: block;
   background: #050A30;
  
-margin-left: 30%;
+margin-left: 26%;
   color: white;
   margin-top: 0px;
   height: 48px;
@@ -346,26 +247,7 @@ margin-left: 30%;
   font-size: 18px;
   }
 
-input{
-  width: 80%;
-  color: #050A30;
-  padding: 11px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-textarea{
-  width: 80%;
-  padding: 30px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-  font-family: sans-serif;
-}
+
 
 
 button:hover {
@@ -373,245 +255,39 @@ button:hover {
 box-shadow: 0 1px 15px rgba(4, 242, 250, 0.438), 0 1px 28px rgba(5, 219, 247, 0.815);
 }
 @media screen and  (max-width : 1024px) {
-    .row1{
-        margin-bottom: 10%;
-
-    }
-    .row{
-      height: auto;
-    }
-    .col{
-    width: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    }
-    .col.contact{
-      margin: 0 auto;
-
-    }
-    iframe{
-    width: 80%;
-    height: 300px;
-    margin: 0 auto;
-
-    
-    /* filter: invert(100%); */
-}
-  
-  }
-
-    </style>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-  function sendEmail(){
- 
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "karobiaanastasia@gmail.com",
-        Password : " WambakiAn!2020.",
-        To : 'karobiaannah@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "This is my subject",
-        Body : message
-    }).then(
-      message => alert(message)
-    );
-    }
-
-    </script>
-</body>
-</html>
+  .row .col.contact{
+    width: 90%;
 
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="servicex.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"   rel="stylesheet">
-
-    <title>Contact Us</title>
-    <style>
-        .col {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row{
-  box-shadow: 1px 1px 2px 2px #050A30;
-}
-
-  .body{
-    font-family: sans-serif;
-  }
-      @media only screen and (min-width: 375px) and (max-width: 1290px){
-
-    .row .col.contact{
-   height: 80%;
    
 
-    }
-    .submit{
-        display: block;
-  background: #050A30;
- 
-margin-left: 30%;
-  color: white;
-  margin-top: 0px;
-  height: 38px;
-  width: 100%;
-  font-size: 18px;
   }
+  .row .col.contact q{
+  margin-top: 0%;
+  padding: 5%;
 
- 
-  }
-  .row .col.contact-form h1{
-    margin-left: 25%;
-    font-size:150%;
-  }
-  .row .col.contact-form{
-    margin-left: 9%;
-    margin-top: 0%;
-    height: auto;
+   
+
   }
   .row .col.map{
     margin-left: 9%;
-    margin-top: 0%;
+    margin-top: 2%;
     height: auto;
-
-  }
-  .row .col.contact{
-    background: #050A30;
-    color: rgb(219, 206, 183);
-    margin-top: -5%;
-    margin-left: 0%;
-    box-shadow: 1px 1px 2px 2px white;
-
-
-    /* width: 35%; */
-    /* height: 70%; */
-   
+    margin-bottom: 10%;
 
   }
   .row .col.contacts{
-    background: #050A30;
-    color: rgb(219, 206, 183);
-    margin-top: 5.5%;
+
   
-    /* width: 40%; */
-    /* height: 70%; */
+    width: 100%;
+   
    
 
   }
-  q{
-    display: block;
-    /* margin-top: 25%; */
-  text-align: center;
-   line-height: 1.5;
-   /* padding-bottom: 5%; */
-   color: rgb(199,147,48);
-
-   font-size: 18px;
-   
-
-
+  .submit{
+    margin-bottom: 3%;
   }
-  .address{
-    display: block;
-    margin-top: 25%;
-  text-align: center;
-   line-height: 1.5;
-   color: rgb(199,147,48);
-
-   font-size: 18px;
-   
-
-
-  }
-  p{
-text-align: center; 
-margin-top: 25%; }
-  body{
-    background: #050A30;
-    font-family: sans-serif;
-
-  }
-  .col {
-  float: left;
-  width: 50%;
-  margin-bottom: 0%;
-  height: auto;
-  
-}
-
-.row{
-margin-left: 5.9%;
-margin-right:5.5%;
-width:auto;
-height: 500px;
-  margin-top: 2%;
-  background: white;
-  color: #050A30;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-      .submit{
-        display: block;
-  background: #050A30;
- 
-margin-left: 30%;
-  color: white;
-  margin-top: 0px;
-  height: 48px;
-  width: 35%;
-  font-size: 18px;
-  }
-
-input{
-  width: 80%;
-  color: #050A30;
-  padding: 11px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-textarea{
-  width: 80%;
-  padding: 30px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-  font-family: sans-serif;
-}
-
-
-button:hover {
-
-box-shadow: 0 1px 15px rgba(4, 242, 250, 0.438), 0 1px 28px rgba(5, 219, 247, 0.815);
-}
-@media screen and  (max-width : 1024px) {
-    .row1{
+  .row1{
         margin-bottom: 10%;
 
     }
@@ -669,7 +345,24 @@ box-shadow: 0 1px 15px rgba(4, 242, 250, 0.438), 0 1px 28px rgba(5, 219, 247, 0.
      
         <div class="col contact-form">
         <h1 style=" margin-top: 4%;">Query Form</h1>
-        <form class="gform pure-form pure-form-stacked" method="POST" data-email="karobiaanastasia@gmail.com"
+        <h2>Query Form</h2>
+        <script type="text/javascript">
+      
+      
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbyCjySa_Q3bGiO6315wbF5ma1-w1RLW0-nDP8kmvwVD5Gh0md_up8Obfkud0KZ4Gmsd-g/exec';
+                  const form = document.forms['google-sheet']
+                
+                  form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                      .then(response => alert("You have successfully submitted."))
+                      .catch(error => console.error('Error!', error.message))
+                  })
+        </script>
+
+
+
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="info@bryantslaw.com"
         action="https://script.google.com/macros/s/AKfycbyCjySa_Q3bGiO6315wbF5ma1-w1RLW0-nDP8kmvwVD5Gh0md_up8Obfkud0KZ4Gmsd-g/exec" style="margin-top: -2%;">
         <div class="form-elements"><br>
        
@@ -686,6 +379,8 @@ box-shadow: 0 1px 15px rgba(4, 242, 250, 0.438), 0 1px 28px rgba(5, 219, 247, 0.
         <h1>Thanks for contacting us!</h1>
         <h1>*******</h1>
 
+        
+
        </div>
     </form>
        </div>
@@ -694,16 +389,15 @@ box-shadow: 0 1px 15px rgba(4, 242, 250, 0.438), 0 1px 28px rgba(5, 219, 247, 0.
     <h2 style=" margin-top: 4%; color: white; text-align: center;">Find us</h2>
     <div class="row" style="background-color: #050A30; box-shadow: 1px 2px 4px 10px  rgb(164 122 47); padding: 2px;" >
       <div class="col contacts"  >
-            <div class="address" style="font-size: 18px; margin-top: 0%; ">
-                <i class="material-icons md-33">place</i> <br> Nairobi</div>
+            <div class="address" style="font-size: 18px; margin-top: 5%; ">
+                <i class="material-icons md-33">place</i> <br> Nairobi </div>
                  
                      
-               <div class="address" style="font-size: 16px; margin-top: 15%;">0720774411 - info@bryantslaw.org</div>
-        
-              
+               <div class="address" style="font-size: 16px; margin-top: 10%;"> info@bryantslaw.com<br>
+               Nrb : 0720774411 / Mbsa : 0727362864</div> 
               
                 <!-- <span ><i class="material-icons md-33">place</i> -->
-                <div class="address"style="font-size: 18px; margin-top: 15%;">
+                <div class="address"style="font-size: 18px; margin-top: 10%;">
                   <i class="material-icons md-33">place</i> <br>
                   Mombasa</div>
         </div>
@@ -712,5 +406,13 @@ box-shadow: 0 1px 15px rgba(4, 242, 250, 0.438), 0 1px 28px rgba(5, 219, 247, 0.
 
         </div>
       </div>
+
+
+      
+<div class="footer" style="text-align: center; color: white; padding: 4%; font-size: 18px; vertical-align: text-bottom; width: 100%;">
+  <h6>© 2023 All rights reserved.</h6>
+</div>
+
+
 </body>
 </html>
