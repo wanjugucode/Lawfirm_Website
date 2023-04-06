@@ -2,6 +2,8 @@ body {
   overflow: hidden;
   background: #050A30;
   height: 500px;
+  zoom: 90%;
+
   
 }
 input {
